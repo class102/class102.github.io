@@ -1,0 +1,10 @@
+.ttt td {
+  background-size: cover;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+.padding-10 {
+  padding: 5px 0;;
+}
