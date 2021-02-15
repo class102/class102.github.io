@@ -3,6 +3,11 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.versus {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
   
 .ttt td {
   background-size: cover;

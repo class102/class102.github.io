@@ -20,7 +20,7 @@ const getPlayers = () => {
     "Daniel",
     "Beatrix",
     "Soren",
-    "Seung (Vin)",
+    "Vin",
     "Ethan",
     "Jason",
     "Sonya",
@@ -29,7 +29,10 @@ const getPlayers = () => {
     "Olivia",
     "Watson",
     "Abigail",
-    "Elizabeth",     
+    "Elizabeth",
+    "Karson",
+    "Anoushka",
+    "William",
   ];
 
   const [playerOne] = allPlayers.splice(Math.floor(Math.random() * allPlayers.length), 1);
@@ -65,7 +68,8 @@ const reset = () => {
   playerOne = players.playerOne;
   playerTwo = players.playerTwo;
   togglePlayer(true);
-  
+
+  document.getElementById('vs').innerHTML = `${playerOne} vs. ${playerTwo}`;
   board.reset();
 }
 
@@ -107,7 +111,7 @@ class Spot {
   reset() {
     this.player = undefined;
     this.alreadyClicked = false;
-    this.element.style.backgroundImage = '';
+    this.element.innerHTML = '';
   }
 }
 
