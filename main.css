@@ -7,7 +7,9 @@ body {
 .ttt td {
   background-size: cover;
   border: 1px solid black;
+  font-size: 2rem; 
   height: 200px;
+  text-align: center;
   width: 200px;
 }
 

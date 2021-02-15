@@ -3,14 +3,37 @@ let scores = Array(8).fill(0);
 let isPlayerOne = true;
 
 const getPlayers = () => {
-  const allImages = [
-    "brant", "chris", "dalia", "edoardo", "fiona", "isabelle", "isis", 
-    "jackson", "jonathan", "liam", "maria", "nathan", "rocio", "sam", 
-    "serena", "siya", "wylie", "zara",
+  const allPlayers = [
+    "Amilia",
+    "Asher",
+    "Lia",
+    "Griffin",
+    "Colin",
+    "Jaiveer",
+    "Dante",
+    "Mattheus",
+    "Ryan",
+    "Junye",
+    "Charlotte",
+    "Sylvie",
+    "Lydia",
+    "Daniel",
+    "Beatrix",
+    "Soren",
+    "Seung (Vin)",
+    "Ethan",
+    "Jason",
+    "Sonya",
+    "Jasmine",
+    "Saia",
+    "Olivia",
+    "Watson",
+    "Abigail",
+    "Elizabeth",     
   ];
 
-  const [playerOne] = allImages.splice(Math.floor(Math.random() * allImages.length), 1);
-  const [playerTwo] = allImages.splice(Math.floor(Math.random() * allImages.length), 1);
+  const [playerOne] = allPlayers.splice(Math.floor(Math.random() * allPlayers.length), 1);
+  const [playerTwo] = allPlayers.splice(Math.floor(Math.random() * allPlayers.length), 1);
   return {playerOne, playerTwo};
 };
 
@@ -64,10 +87,10 @@ class Spot {
     this.alreadyClicked = true;
   
     if (isPlayerOne) {
-      this.element.style.backgroundImage = `url("images/${playerOne}.jpg")`;
+      this.element.innerHTML = playerOne;
       this.player = 1;
     } else {
-      this.element.style.backgroundImage = `url("images/${playerTwo}.jpg")`;
+      this.element.innerHTML = playerTwo;
       this.player = -1;
     }
   
